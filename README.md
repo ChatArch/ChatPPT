@@ -1,12 +1,12 @@
 <div align="center">
     <a href="https://pypi.python.org/pypi/ChatPPT">
-        <img src="https://img.shields.io/pypi/v/ChatPPT.svg" alt="PyPI version" />
+        <img src="https://img.shields.io/pypi/v/ChatPPT.svg" alt="PyPI 版本" />
     </a>
     <a href="https://github.com/ChatArch/ChatPPT/actions/workflows/ci.yml">
-        <img src="https://github.com/ChatArch/ChatPPT/actions/workflows/ci.yml/badge.svg" alt="Tests" />
+        <img src="https://github.com/ChatArch/ChatPPT/actions/workflows/ci.yml/badge.svg" alt="测试状态" />
     </a>
     <a href="https://arch.gh.wzhecnu.cn/ChatPPT/">
-        <img src="https://img.shields.io/badge/docs-mkdocs-blue.svg" alt="Documentation" />
+        <img src="https://img.shields.io/badge/docs-mkdocs-blue.svg" alt="文档" />
     </a>
 </div>
 
