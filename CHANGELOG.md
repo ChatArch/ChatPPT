@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-08-11
+
+### Added
+
+- 发布 `ChatPPT` patch `0.1.1`，新增真实 Click registry 生成的顶层 `chatppt --tree`。
+- CLI 树文档现在记录当前真实空业务命令面，只展示 root pseudo-options，不再保留模板占位。
+
+### Changed
+
+- 将 ChatEnv 依赖下界提升到已发布 rollout 基线 `>=0.2.4,<0.3.0`。
+- 将 MkDocs Material 文档依赖收紧到当前 strict-build 验证窗口。
+
 ## 2026-08-06
 
 ### Added

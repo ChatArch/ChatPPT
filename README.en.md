@@ -36,13 +36,14 @@ Choose documentation by scenario:
 pip install -e ".[dev]"
 chatppt --help
 chatppt --version
+chatppt --tree
 python -m pytest -q
 python -m build
 ```
 
 ## CLI Contract
 
-This template depends on `chatstyle>=0.1.0,<0.2.0` and `chatenv>=0.2.0,<0.3.0`. New commands should prefer:
+This template depends on `chatstyle>=0.1.0,<0.2.0` and `chatenv>=0.2.4,<0.3.0`. New commands should prefer:
 
 - `CommandSchema` / `CommandField` for inputs.
 - `add_interactive_option()` for the shared `-i/-I` switch.
