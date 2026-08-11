@@ -1,43 +1,32 @@
 # CLI Capability Map
 
-This page is the compact capability map for the `ChatPPT` CLI. Use it to review which commands are first-class entries and which are still boundary or planned slots. After scaffolding, update it with the real command tree; do not present unimplemented commands as available operations.
+This page is the compact capability map for the `ChatPPT` CLI. Use it to review which commands are first-class entries and which are still boundary or planned slots.
 
 Importable Python functions are mapped in [Interface Tree](interface-tree.md). Current package boundaries are tracked in [Capability Map](capability-map.md).
 
-## Top-Level Commands
+## Current Runtime Command Tree
+
+The block below is rendered by `chatppt --tree` from the real Click registry. `ChatPPT` currently has no business subcommands, so only root pseudo-options are shown.
 
 ```text
-chatppt                  # ChatPPT command-line entry
-├── --help                     # Show CLI help and registered commands
-└── --version                  # Print the current package version
+chatppt # chatppt command line interface
+├── --help # Show this message and exit
+├── --version # Show the package version
+└── --tree # Show the registered CLI command tree
+
 ```
 
 ## Base Entries
 
 ```text
-chatppt --help           # Verify the command is installed and inspect the current command tree
+chatppt --help           # Verify the command is installed and inspect current help
 chatppt --version        # Verify the installed version
+chatppt --tree           # Print the current real CLI registry
 ```
 
-`--help` and `--version` are the scaffolded verification entries. After adding business commands, follow the ChatTea CLI tree pattern: split command groups into their own sections and annotate every command line.
+## Business Command Status
 
-## Business Command Slots
-
-```text
-chatppt <group>          # Command group named after real package capability
-├── <command>                  # Explain what this command does
-└── <command>                  # Explain status, boundary, or checkpoint behavior
-```
-
-This is a structural placeholder, not a promise of future capability. Only document a command as implemented after the command, Python function, and tests exist.
-
-## Status Contract
-
-| Status | Meaning |
-| --- | --- |
-| Implemented | Command, function, and tests exist |
-| Verified | Covered by CI, local smoke, or real-service practice |
-| Planned / checkpoint | Keep only boundary notes; do not write operation tutorials before implementation |
+This package currently has no business subcommands. Do not document template placeholders or sample commands as available entries. Only document a command as implemented after the command, Python function, and tests exist.
 
 ## Implementation Contract
 
