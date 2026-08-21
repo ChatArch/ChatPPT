@@ -9,19 +9,22 @@
 以下内容由 `chatppt --tree` 对真实 Click registry 渲染得到。当前 `ChatPPT` 暂无业务子命令，因此只展示 root pseudo-options。
 
 ```text
-chatppt # chatppt command line interface
-├── --help # Show this message and exit
-├── --version # Show the package version
-└── --tree # Show the registered CLI command tree
-
+chatppt
+├── --help  # Show this message and exit.
+├── --version  # Show the version and exit.
+├── --tree  # Print the registered CLI tree and exit.
+└── --tree-brief  # Print the registered CLI tree without parameter signatures and exit.
 ```
+
+`chatppt --tree-brief` 保留相同节点和说明，但会在新增业务命令后省略参数签名。
 
 ## 基础入口
 
 ```text
 chatppt --help           # 验证命令已安装，并查看当前帮助
 chatppt --version        # 验证当前安装版本
-chatppt --tree           # 输出当前真实 CLI registry
+chatppt --tree           # 输出带参数签名的当前真实 CLI registry
+chatppt --tree-brief     # 输出不带参数签名的相同 CLI registry
 ```
 
 ## 业务命令状态

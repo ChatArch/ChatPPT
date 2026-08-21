@@ -2,7 +2,9 @@
 
 ## CLI Rules
 
-- Use `chatstyle>=0.1.0,<0.2.0` and `chatenv>=0.2.4,<0.3.0` as the canonical CLI interaction runtime.
+- Use `chatstyle>=0.2.0,<0.3.0` and `chatenv>=0.2.10,<0.3.0` as the canonical CLI and profile runtime.
+- Keep the public Click root explicitly named `chatppt`; use ChatStyle `add_tree_option()` for `--tree` and `--tree-brief`.
+- Keep ChatPPT configuration in the registered typed ChatEnv provider and use ChatEnv profile/storage APIs rather than package-local path or dotenv logic.
 - Prefer `CommandSchema`, `CommandField`, `add_interactive_option()`, and `resolve_command_inputs()` for new commands.
 - Missing required args should auto-enter interactive mode when recoverable.
 - `-i` forces interactive mode; `-I` disables prompting and must fail fast.
@@ -22,3 +24,4 @@
 - Keep automation small and reviewable.
 - Prefer commands that can run in CI without interactive prompts.
 - Ensure generated defaults are safe for local development.
+- Run installed `chatppt --version`, `chatppt --tree`, `chatppt --tree-brief`, and typed ChatEnv provider checks in CI.

@@ -9,19 +9,22 @@ Importable Python functions are mapped in [Interface Tree](interface-tree.md). C
 The block below is rendered by `chatppt --tree` from the real Click registry. `ChatPPT` currently has no business subcommands, so only root pseudo-options are shown.
 
 ```text
-chatppt # chatppt command line interface
-├── --help # Show this message and exit
-├── --version # Show the package version
-└── --tree # Show the registered CLI command tree
-
+chatppt
+├── --help  # Show this message and exit.
+├── --version  # Show the version and exit.
+├── --tree  # Print the registered CLI tree and exit.
+└── --tree-brief  # Print the registered CLI tree without parameter signatures and exit.
 ```
+
+`chatppt --tree-brief` keeps the same nodes and descriptions, but omits parameter signatures once business commands are added.
 
 ## Base Entries
 
 ```text
 chatppt --help           # Verify the command is installed and inspect current help
 chatppt --version        # Verify the installed version
-chatppt --tree           # Print the current real CLI registry
+chatppt --tree           # Print the current real CLI registry with signatures
+chatppt --tree-brief     # Print the same CLI registry without signatures
 ```
 
 ## Business Command Status
