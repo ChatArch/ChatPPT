@@ -37,18 +37,20 @@ pip install -e ".[dev]"
 chatppt --help
 chatppt --version
 chatppt --tree
+chatppt --tree-brief
 python -m pytest -q
 python -m build
 ```
 
 ## CLI Contract
 
-This template depends on `chatstyle>=0.1.0,<0.2.0` and `chatenv>=0.2.4,<0.3.0`. New commands should prefer:
+This package depends on `chatstyle>=0.2.0,<0.3.0` and `chatenv>=0.2.10,<0.3.0`. New commands should prefer:
 
+- `add_tree_option()` to generate `--tree` and `--tree-brief` from the real Click registry.
 - `CommandSchema` / `CommandField` for inputs.
 - `add_interactive_option()` for the shared `-i/-I` switch.
 - `resolve_command_inputs()` for missing args, defaults, TTY behavior, and validation.
-- Generate `config.py` and a `chatenv.configs` entry point by default so the package is ChatEnv-discoverable; use `--without-chatenv-provider` only when ChatEnv integration is intentionally not needed.
+- The typed provider in `config.py` and the `chatenv.configs` entry point make the package ChatEnv-discoverable while ChatEnv owns active and named profile storage paths.
 
 ## Layout
 

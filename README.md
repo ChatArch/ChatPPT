@@ -37,18 +37,20 @@ pip install -e ".[dev]"
 chatppt --help
 chatppt --version
 chatppt --tree
+chatppt --tree-brief
 python -m pytest -q
 python -m build
 ```
 
 ## 命令行规范
 
-这个模板默认依赖 `chatstyle>=0.1.0,<0.2.0` 和 `chatenv>=0.2.4,<0.3.0`，新增命令应优先使用：
+当前包依赖 `chatstyle>=0.2.0,<0.3.0` 和 `chatenv>=0.2.10,<0.3.0`，新增命令应优先使用：
 
+- `add_tree_option()` 从真实 Click registry 统一生成 `--tree` 和 `--tree-brief`。
 - `CommandSchema` / `CommandField` 描述输入。
 - `add_interactive_option()` 提供统一 `-i/-I`。
 - `resolve_command_inputs()` 统一缺参补问、默认值、TTY 与校验。
-- 默认生成 `config.py` 和 `chatenv.configs` 入口点，使包可被 ChatEnv 发现；只有明确不需要 ChatEnv 接入时才使用 `--without-chatenv-provider`。
+- `config.py` 中的 typed provider 与 `chatenv.configs` 入口点使包可被 ChatEnv 发现，并由 ChatEnv 管理 active/named profile 存储路径。
 
 ## 目录结构
 

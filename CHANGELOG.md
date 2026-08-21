@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-22
+
+### Changed
+
+- 发布 `ChatPPT` patch `0.1.2`，将本地 Click tree renderer 迁移到 ChatStyle `add_tree_option()`，并新增 registry-backed `chatppt --tree-brief`。
+- 将运行时基线对齐到 `chatstyle>=0.2.0,<0.3.0` 和 `chatenv>=0.2.10,<0.3.0`，保留 typed ChatEnv provider 与 ChatEnv 管理的 profile 存储路径。
+- 扩展 Python 3.10-3.12 CI、安装态 CLI/ChatEnv 与 wheel smoke、构建/Twine 检查，并为 tag 发布增加默认分支祖先校验。
+
 ## 2026-08-11
 
 ### Added
