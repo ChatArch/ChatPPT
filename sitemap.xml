@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://arch.gh.wzhecnu.cn/ChatPPT/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://arch.gh.wzhecnu.cn/ChatPPT/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arch.gh.wzhecnu.cn/ChatPPT/en/"/>
+    </url>
+    <url>
+        <loc>https://arch.gh.wzhecnu.cn/ChatPPT/capability-map/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://arch.gh.wzhecnu.cn/ChatPPT/capability-map/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arch.gh.wzhecnu.cn/ChatPPT/en/capability-map/"/>
+    </url>
+    <url>
+        <loc>https://arch.gh.wzhecnu.cn/ChatPPT/cli-tree/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://arch.gh.wzhecnu.cn/ChatPPT/cli-tree/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arch.gh.wzhecnu.cn/ChatPPT/en/cli-tree/"/>
+    </url>
+    <url>
+        <loc>https://arch.gh.wzhecnu.cn/ChatPPT/interface-tree/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://arch.gh.wzhecnu.cn/ChatPPT/interface-tree/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arch.gh.wzhecnu.cn/ChatPPT/en/interface-tree/"/>
+    </url>
+    <url>
+        <loc>https://arch.gh.wzhecnu.cn/ChatPPT/en/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arch.gh.wzhecnu.cn/ChatPPT/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://arch.gh.wzhecnu.cn/ChatPPT/"/>
+    </url>
+    <url>
+        <loc>https://arch.gh.wzhecnu.cn/ChatPPT/en/capability-map/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arch.gh.wzhecnu.cn/ChatPPT/en/capability-map/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://arch.gh.wzhecnu.cn/ChatPPT/capability-map/"/>
+    </url>
+    <url>
+        <loc>https://arch.gh.wzhecnu.cn/ChatPPT/en/cli-tree/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arch.gh.wzhecnu.cn/ChatPPT/en/cli-tree/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://arch.gh.wzhecnu.cn/ChatPPT/cli-tree/"/>
+    </url>
+    <url>
+        <loc>https://arch.gh.wzhecnu.cn/ChatPPT/en/interface-tree/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arch.gh.wzhecnu.cn/ChatPPT/en/interface-tree/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://arch.gh.wzhecnu.cn/ChatPPT/interface-tree/"/>
+    </url>
+</urlset>
